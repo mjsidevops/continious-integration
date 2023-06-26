@@ -18,7 +18,7 @@ pipeline {
         CENTRAL_REPO = 'maven-proxy-repo'
         NEXUSIP = '54.173.139.145'
         NEXUSPORT = '8081'
-        NEXUS_GRP-REPO = 'maven-app-group'
+        NEXUS_GRP_REPO = 'maven-app-group'
         NEXUS_LOGIN = 'nexuslogin'
         SONARSERVER = 'sonarserver'
         SONARSCANNER = 'sonarscanner'
