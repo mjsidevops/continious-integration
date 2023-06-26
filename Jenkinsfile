@@ -12,13 +12,13 @@ pipeline {
 
     environment {
         SNAP_REPO = 'maven-snap-repo'
-        NEXUS-USER = 'admin'
-        NEXUS-PASS = 'admin'
-        RELEASE-REPO = 'maven-central-repo'
-        CENTRAL-REPO = 'maven-proxy-repo'
+        NEXUS_USER = 'admin'
+        NEXUS_PASS = 'admin'
+        RELEASE_REPO = 'maven-central-repo'
+        CENTRAL_REPO = 'maven-proxy-repo'
         NEXUSIP = '54.173.139.145'
         NEXUSPORT = '8081'
-        NEXUS-GRP-REPO = 'maven-app-group'
+        NEXUS_GRP-REPO = 'maven-app-group'
         NEXUS_LOGIN = 'nexuslogin'
         SONARSERVER = 'sonarserver'
         SONARSCANNER = 'sonarscanner'
@@ -88,7 +88,7 @@ pipeline {
                   nexusUrl: "${NEXUSIP}:${NEXUSPORT}",
                   groupId: 'QA',
                   version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
-                  repository: "${RELEASE-REPO}",
+                  repository: "${RELEASE_REPO}",
                   credentialsId: "${NEXUS_LOGIN}",
                   artifacts: [
                     [artifactId: 'vproapp',
