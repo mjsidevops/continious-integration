@@ -11,7 +11,7 @@ pipeline {
     }
 
     environment {
-        SNAP-REPO = 'maven-snap-repo'
+        SNAP_REPO = 'maven-snap-repo'
         NEXUS-USER = 'admin'
         NEXUS-PASS = 'admin'
         RELEASE-REPO = 'maven-central-repo'
