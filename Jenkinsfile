@@ -16,7 +16,7 @@ pipeline {
         NEXUS_PASS = 'admin'
         RELEASE_REPO = 'maven-central-repo'
         CENTRAL_REPO = 'maven-proxy-repo'
-        NEXUSIP = '54.173.139.145'
+        NEXUSIP = '172.31.81.214'
         NEXUSPORT = '8081'
         NEXUS_GRP_REPO = 'maven-app-group'
         NEXUS_LOGIN = 'nexuslogin'
